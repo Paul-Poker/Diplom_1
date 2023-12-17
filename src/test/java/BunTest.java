@@ -3,28 +3,28 @@ import praktikum.Bun;
 
 import static org.junit.Assert.assertEquals;
 
-public class BunTest{
+public class BunTest {
 
     private String name;
     private float price;
 
     @Test
-    public void getNameReturnsCorretNameforBun(){
+    public void getNameReturnsCorrectNameForBun() {
         //Arrange
-        Bun bun = new Bun (name, price);
+        Bun bun = new Bun(name, price);
         //Act
         String resultName = bun.getName();
         //Assert
-        assertEquals ("Название булочки совпадает",name, resultName);
+        assertEquals("Name булочки совпадает", name, resultName);
     }
 
     @Test
-    public void getPriceReturnsCorrectPrcie(){
+    public void getPriceReturnsCorrectPrcie() {
         //Arrange
-        Bun bun = new Bun (name, price);
+        Bun bun = new Bun(name, price);
         //Act
         float resultPrice = bun.getPrice();
         //Assert
-        assertEquals ("Цена за булочку совпадает", price, resultPrice, 0);
+        assertEquals("Price за булочку совпадает", price, resultPrice, 0);
     }
 }
