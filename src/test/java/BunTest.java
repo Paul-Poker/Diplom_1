@@ -5,13 +5,8 @@ import static org.junit.Assert.assertEquals;
 
 public class BunTest {
 
-    private final String name;
-    private final float price;
-
-    public BunTest(String name, float price) {
-        this.name = name;
-        this.price = price;
-    }
+    private String name;
+    private float price;
 
     @Test
     public void getNameReturnsCorrectNameForBun() {
