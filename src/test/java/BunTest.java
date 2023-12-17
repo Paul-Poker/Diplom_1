@@ -19,7 +19,7 @@ public class BunTest {
     }
 
     @Test
-    public void getPriceReturnsCorrectPrcie() {
+    public void getPriceReturnsCorrectPrice() {
         //Arrange
         Bun bun = new Bun(name, price);
         //Act
